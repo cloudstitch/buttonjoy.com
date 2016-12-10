@@ -61,10 +61,10 @@
           <h2 class="paragraph" style="font-size: 1.4em">
             <div>Crazy simple setup. Just $2 / month per button</div>
           </h2>
-          <form class="ctas" method="POST">
-            <input class="ctas-input" type="text" placeholder="Email Address"><br/>
-            <input class="ctas-input" type="text" placeholder="Expected # Buttons"><br/>
-            <input class="ctas-input" type="text" placeholder="Industry"><br/>
+          <form class="ctas" method="POST" action="//api.cloudstitch.com/buttonjoy/buttonjoy-interest/datasources/sheet">
+            <input name="Email" class="ctas-input" type="text" placeholder="Email Address"><br/>
+            <input name="ButtonCount" class="ctas-input" type="text" placeholder="Expected # Buttons"><br/>
+            <input name="Industry" class="ctas-input" type="text" placeholder="Industry"><br/>
             <button class="ctas-button">
               Sign Up for Beta
             </button>
@@ -218,14 +218,14 @@
           <h3 class="heading">
             Crazy simple setup. <br />Just $2 / month per button.<br>
           </h3>
-          <div class="ctas">
-            <input class="ctas-input" type="text" placeholder="Your Email Address"><br />
-            <input class="ctas-input" type="text" placeholder="Expected # Buttons"><br />
-            <input class="ctas-input" type="text" placeholder="Your Industry"><br />
+          <form class="ctas" method="POST" action="//api.cloudstitch.com/buttonjoy/buttonjoy-interest/datasources/sheet">
+            <input name="Email" class="ctas-input" type="text" placeholder="Email Address"><br/>
+            <input name="ButtonCount" class="ctas-input" type="text" placeholder="Expected # Buttons"><br/>
+            <input name="Industry" class="ctas-input" type="text" placeholder="Industry"><br/>
             <button class="ctas-button">
               Sign Up for Beta
             </button>
-          </div>
+          </form>
         </div>
       </div>
       <div class="container-lrg footer-nav flex">
