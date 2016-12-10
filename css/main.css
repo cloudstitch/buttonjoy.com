@@ -18,6 +18,10 @@
 body {
   -webkit-font-smoothing: antialiased;
 }
+.footer a {
+	color: white;
+	text-decoration: none;
+}
 /*text*/
 .heading {
   font-weight: 100;
@@ -150,6 +154,9 @@ p.paragraph {
 .ctas {
   margin: 40px 0 0 0;
 }
+a {
+	text-decoration: none;
+}
 .centerdevices,
 .sidedevices {
   position: relative;
@@ -164,6 +171,8 @@ p.paragraph {
 	.header .sidedevices {
 		min-height: inherit;
 	}
+	.col-4 {width: 100%;}
+
 	.header .flex {
 		flex-direction: column;
 	}
@@ -305,11 +314,12 @@ p.paragraph {
 	line-height: 40px;
 	padding: 0 15px;
 	width: 260px;
+	margin: 4px;
 	display: inline-block;
 }
 .ctas-button {
 	display: inline-block;
-	margin: 0 0 0 10px;
+	margin: 4px 0 0 10px;
 	height: 40px;
 	line-height: 38px;
 	padding: 0 30px;
@@ -334,16 +344,13 @@ p.paragraph {
 	}
 }.feature1 {
 	padding: 90px 0;
-	border-bottom: 1px solid rgba(0,0,0,.1);
 }
 .feature1	.centerdevices {
 	margin-top: 90px;
 }.feature2 {
-	border-bottom: 1px solid rgba(0,0,0,.1);
 }
 .feature2	.col-6:nth-of-type(2n - 1) {
 	padding: 90px 90px 90px 20px;
-	border-right: 1px solid rgba(0,0,0,.1)
 }
 .feature2	.col-6:nth-of-type(3n - 1) {
 	padding: 90px 20px 90px 90px;
@@ -380,7 +387,6 @@ p.paragraph {
 		margin-top: 30px;
 	}
 }.feature2 {
-	border-bottom: 1px solid rgba(0,0,0,.1);
 }
 .feature2	.col-6:nth-of-type(2n - 1) {
 	padding: 90px 90px 90px 20px;

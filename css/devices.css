@@ -26,9 +26,15 @@
 	position: absolute;
 	left: 0;
 	top: 0;
-	z-index: 0;
+	z-index: 6;
 	box-shadow: inset 0 4px 7px 1px #fff,inset 0 -5px 20px rgba(187,200,225,.35),0 2px 6px rgba(40,39,66,.14),0 10px 20px rgba(40,39,66,.06);
 	transform: scale(.9) translate3d(-5%,0,0);
+}
+.sidedevices .iphones .iot-button {
+	position: absolute;
+	left: 0;
+	top: 50;
+	z-index: 4;
 }
 .sidedevices .iphones .iphone:after {
 	content: "";
@@ -58,23 +64,30 @@
 		overflow: scroll;
 		width: calc(100% + 40px);
 		margin: 0 0 0 -20px;
+		text-align: right;
 	}
 	.sidedevices .iphones .iphone {
 		transform: none;
 		border: none;
 		position: relative;
-		margin: 0 20px;
+		margin: 0px 20px;
 		display: inline-block;
 		height: 440px;
 		width: 220px;
 		padding: 50px 8px 60px;
-		margin: 0 0 0 20px;
+		margin: 50px 0 0 20px;
 		border-radius: 30px;
 		box-shadow: inset 0 4px 7px 1px #fff,inset 0 -5px 20px rgba(187,200,225,.35),0 2px 6px rgba(40,39,66,.14),0 10px 20px rgba(40,39,66,.06);
 	}
 	.sidedevices .iphones .iphone__2 {
 		margin: 0 20px 0 20px;
 	}
+	.sidedevices .iphones .iot-button {
+		margin: 0 20px 0 20px;
+		position: relative;
+		display: block;
+	}
+
 	.sidedevices .iphones .iphone .mask {
 		border-radius: 4px;
 	}
