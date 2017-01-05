@@ -1,318 +1,446 @@
-<html>
-  <head>
-    <title>
-      Buttonjoy - Connect buttons to emails, spreadsheets, and more.
-    </title>
-    <meta charSet="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
-    <title></title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="keywords" content="Dash, IoT, Cloudstitch, Spreadsheet, Hack, Maker" >
-    <meta name="description" content="Connect real world buttons to emails, spreadsheets, code, and more.">
-    <!--FACEBOOK-->
-    <meta property="og:title" content="Buttonjoy" >
-    <meta property="og:site_name" content="Buttonjoy">
-    <meta property="og:url" content="http://www.buttonjoy.com" >
-    <meta property="og:description" content="Connect buttons to emails, spreadsheets, and more." >
-    <meta property="og:image" content="http://www.buttonjoy.com/img/facebook-card.png" >
-    <meta property="fb:app_id" content="" >
-    <meta property="og:type" content="website" >
-    <meta property="og:locale" content="en-US" >
-    <!--TWITTER-->
-    <meta property="twitter:card" content="summary_large_image" >
-    <meta property="twitter:title" content="Buttonjoy" >
-    <meta property="twitter:description" content="Connect buttons to emails, spreadsheets, and more." >
-    <meta property="twitter:creator" content="Cloudstitch" >
-    <meta property="twitter:url" content="http://www.buttonjoy.com" >
-    <meta property="twitter:site" content="@buttonjoy" >
-    <meta property="twitter:creator" content="@cloudstitch" >
-    <meta property="twitter:image" content="http://www.buttonjoy.com/img/twitter-card.png" >
-    <meta property="twitter:image:alt" content="" >
-    <!--GOOGLE+-->
-    <link rel="author" href="Cloudstitch">
-    <link rel="publisher" href="Cloudstitch">
-
-    <link rel="stylesheet" type="text/css" href="css/main.css">
-    <link rel="stylesheet" type="text/css" href="css/devices.css">
-  </head>
-  <body>
-    <header class="header">
-      <div class="container-lrg">
-        <div class="col-12 spread">
-          <div>
-            <a class="logo" href="http://www.buttonjoy.com">
-              <img src="img/b-logo.png" width="40" height="40" style="vertical-align: middle"/>&nbsp;<span style="vertical-align: middle">Buttonjoy</span>
+<!DOCTYPE html>
+<!--  This site was created in Webflow. http://www.webflow.com -->
+<!--  Last Published: Thu Jan 05 2017 20:56:14 GMT+0000 (UTC)  -->
+<html data-wf-page="5858906d4007680b63d14967" data-wf-site="5858906d4007680b63d14966">
+<head>
+  <meta charset="utf-8">
+  <title>Buttonjoy</title>
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <meta content="Webflow" name="generator">
+  <link href="css/normalize.css" rel="stylesheet" type="text/css">
+  <link href="css/webflow.css" rel="stylesheet" type="text/css">
+  <link href="css/buttonjoy.webflow.css" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>
+  <script type="text/javascript">
+    WebFont.load({
+      google: {
+        families: ["Droid Sans:400,700"]
+      }
+    });
+  </script>
+  <script src="js/modernizr.js" type="text/javascript"></script>
+  <link href="images/b-ico.png" rel="shortcut icon" type="image/x-icon">
+  <link href="images/b-256.png" rel="apple-touch-icon">
+</head>
+<body class="buttonjoy-font">
+  <div class="orange w-nav" data-animation="default" data-collapse="medium" data-duration="400">
+    <div class="w-container">
+      <a class="logo-wrapper w-nav-brand" href="#"><img class="logo-img" src="images/buttonjoy-logo.png">
+        <h1 class="logo-h1">Buttonjoy</h1>
+      </a>
+      <nav class="nav-menu w-nav-menu" role="navigation"><a class="w-nav-link" href="#">Home</a><a class="w-nav-link" href="#">About</a><a class="w-nav-link" href="#">Contact</a>
+      </nav>
+      <div class="hamburger w-nav-button">
+        <div class="hamburger w-icon-nav-menu"></div>
+      </div>
+    </div>
+  </div>
+  <div class="bg-orange">
+    <div class="w-container">
+      <div class="w-row">
+        <div class="lrpad w-col w-col-6" id="Order-form">
+          <h1 class="h1-send-me" id="send-me-title">Send me a button that..</h1>
+          <div class="w-embed">
+            <div class="uil-ring-css" style="display:none; transform:scale(0.6);">
+              <div></div>
+            </div>
+          </div>
+          <div class="insta-buy w-form" id="buy-success">
+            <form data-name="Instabuy" id="buy-form" method="post" name="wf-form-Instabuy">
+              <div checked="true" class="radio-buy w-clearfix w-radio">
+                <input class="w-radio-input" data-name="Transport" id="Phone" name="Transport" type="radio" value="Phone">
+                <label class="radio w-form-label" for="Phone">Calls</label>
+              </div>
+              <div class="radio-buy w-clearfix w-radio">
+                <input class="w-radio-input" data-name="Transport" id="SMS" name="Transport" type="radio" value="SMS">
+                <label class="radio w-form-label" for="SMS">Texts</label>
+              </div>
+              <div class="radio-buy w-clearfix w-radio">
+                <input class="w-radio-input" data-ix="new-interaction-2" data-name="Transport" id="Email" name="Transport" type="radio" value="Email">
+                <label class="radio w-form-label" for="Email">Emails</label>
+              </div>
+              <input class="w-input" data-name="Target" id="Target" maxlength="256" name="Target" placeholder="This phone number" required="required" type="text">
+              <label class="radio" for="Message">With the message:</label>
+              <textarea class="w-input" data-name="Message" id="Message" maxlength="5000" name="Message" placeholder="Allen Legal Associates has requested a water refill." required="required"></textarea>
+              <input class="submit w-button" data-wait="Please wait..." id="buy-btn" type="submit" value="Buy ($50)"><a class="bulk" href="/bulk" target="_blank">Inquire about Bulk Purchasing</a>
+              <div class="caveat">$2/month after the first two years</div>
+              <div class="w-embed w-script">
+                <input type="hidden" id="emailInput" name="email">
+                <input type="hidden" id="stripeToken" name="stripeToken">
+                <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+                <script src="https://checkout.stripe.com/checkout.js"></script>
+                <style type="text/css">
+                  width: 100%;
+                  @-webkit-keyframes uil-ring-anim {
+                    0% {
+                      -ms-transform: rotate(0deg);
+                      -moz-transform: rotate(0deg);
+                      -webkit-transform: rotate(0deg);
+                      -o-transform: rotate(0deg);
+                      transform: rotate(0deg);
+                    }
+                    100% {
+                      -ms-transform: rotate(360deg);
+                      -moz-transform: rotate(360deg);
+                      -webkit-transform: rotate(360deg);
+                      -o-transform: rotate(360deg);
+                      transform: rotate(360deg);
+                    }
+                  }
+                  @-webkit-keyframes uil-ring-anim {
+                    0% {
+                      -ms-transform: rotate(0deg);
+                      -moz-transform: rotate(0deg);
+                      -webkit-transform: rotate(0deg);
+                      -o-transform: rotate(0deg);
+                      transform: rotate(0deg);
+                    }
+                    100% {
+                      -ms-transform: rotate(360deg);
+                      -moz-transform: rotate(360deg);
+                      -webkit-transform: rotate(360deg);
+                      -o-transform: rotate(360deg);
+                      transform: rotate(360deg);
+                    }
+                  }
+                  @-moz-keyframes uil-ring-anim {
+                    0% {
+                      -ms-transform: rotate(0deg);
+                      -moz-transform: rotate(0deg);
+                      -webkit-transform: rotate(0deg);
+                      -o-transform: rotate(0deg);
+                      transform: rotate(0deg);
+                    }
+                    100% {
+                      -ms-transform: rotate(360deg);
+                      -moz-transform: rotate(360deg);
+                      -webkit-transform: rotate(360deg);
+                      -o-transform: rotate(360deg);
+                      transform: rotate(360deg);
+                    }
+                  }
+                  @-ms-keyframes uil-ring-anim {
+                    0% {
+                      -ms-transform: rotate(0deg);
+                      -moz-transform: rotate(0deg);
+                      -webkit-transform: rotate(0deg);
+                      -o-transform: rotate(0deg);
+                      transform: rotate(0deg);
+                    }
+                    100% {
+                      -ms-transform: rotate(360deg);
+                      -moz-transform: rotate(360deg);
+                      -webkit-transform: rotate(360deg);
+                      -o-transform: rotate(360deg);
+                      transform: rotate(360deg);
+                    }
+                  }
+                  @-moz-keyframes uil-ring-anim {
+                    0% {
+                      -ms-transform: rotate(0deg);
+                      -moz-transform: rotate(0deg);
+                      -webkit-transform: rotate(0deg);
+                      -o-transform: rotate(0deg);
+                      transform: rotate(0deg);
+                    }
+                    100% {
+                      -ms-transform: rotate(360deg);
+                      -moz-transform: rotate(360deg);
+                      -webkit-transform: rotate(360deg);
+                      -o-transform: rotate(360deg);
+                      transform: rotate(360deg);
+                    }
+                  }
+                  @-webkit-keyframes uil-ring-anim {
+                    0% {
+                      -ms-transform: rotate(0deg);
+                      -moz-transform: rotate(0deg);
+                      -webkit-transform: rotate(0deg);
+                      -o-transform: rotate(0deg);
+                      transform: rotate(0deg);
+                    }
+                    100% {
+                      -ms-transform: rotate(360deg);
+                      -moz-transform: rotate(360deg);
+                      -webkit-transform: rotate(360deg);
+                      -o-transform: rotate(360deg);
+                      transform: rotate(360deg);
+                    }
+                  }
+                  @-o-keyframes uil-ring-anim {
+                    0% {
+                      -ms-transform: rotate(0deg);
+                      -moz-transform: rotate(0deg);
+                      -webkit-transform: rotate(0deg);
+                      -o-transform: rotate(0deg);
+                      transform: rotate(0deg);
+                    }
+                    100% {
+                      -ms-transform: rotate(360deg);
+                      -moz-transform: rotate(360deg);
+                      -webkit-transform: rotate(360deg);
+                      -o-transform: rotate(360deg);
+                      transform: rotate(360deg);
+                    }
+                  }
+                  @keyframes uil-ring-anim {
+                    0% {
+                      -ms-transform: rotate(0deg);
+                      -moz-transform: rotate(0deg);
+                      -webkit-transform: rotate(0deg);
+                      -o-transform: rotate(0deg);
+                      transform: rotate(0deg);
+                    }
+                    100% {
+                      -ms-transform: rotate(360deg);
+                      -moz-transform: rotate(360deg);
+                      -webkit-transform: rotate(360deg);
+                      -o-transform: rotate(360deg);
+                      transform: rotate(360deg);
+                    }
+                  }
+                  .uil-ring-css {
+                    background: none;
+                    position: relative;
+                    width: 200px;
+                    height: 200px;
+                  }
+                  .uil-ring-css > div {
+                    position: absolute;
+                    display: block;
+                    width: 160px;
+                    height: 160px;
+                    top: 20px;
+                    left: 20px;
+                    border-radius: 80px;
+                    box-shadow: 0 6px 0 0 #cbe9ed;
+                    -ms-animation: uil-ring-anim 1s linear infinite;
+                    -moz-animation: uil-ring-anim 1s linear infinite;
+                    -webkit-animation: uil-ring-anim 1s linear infinite;
+                    -o-animation: uil-ring-anim 1s linear infinite;
+                    animation: uil-ring-anim 1s linear infinite;
+                  }
+                </style>
+                <script>
+                  var handler = StripeCheckout.configure({
+                    key: 'pk_live_BS74F3hkBGXozwX0thtk9MX6',
+                    image: "http://buttonjoy.com/img/b-256.png",
+                    locale: 'auto',
+                    amount: 5000,
+                    currency: 'USD',
+                    shippingAddress: true,
+                    name: 'Buttonjoy',
+                    description: 'One Magical Button',
+                    token: function(token) {
+                      // $('#emailInput').val(token.email);
+                      // $('#stripeToken').val(JSON.stringify(token));
+                      var data = {
+                        stripeToken: token,
+                        transport: $('input[name=Transport]:checked').val(),
+                        target: $('input[name=Target]').val(),
+                        message: $('textarea[name=Message]').val(),
+                        email: token.email
+                      }
+                      $('#buy-form').hide();
+                      $('#send-me-title').hide();
+                      $('.uil-ring-css').show();
+                      $.ajax({
+                        url: "https://irhrp3ftn9.execute-api.us-west-2.amazonaws.com/prod/order", 
+                        method: 'post',
+                        data: JSON.stringify(data),
+                        contentType: "application/json; charset=utf-8",
+                        dataType   : "json",  
+                      }).done(function(a, b, c) {
+                        $('#buy-form').hide();
+                        $('.w-form-done').first().show();
+                        $('.uil-ring-css').hide();
+                      }).fail(function(a, b, c) {
+                        $('#buy-form').hide()
+                        $('.w-form-fail').first().show();
+                        $('.uil-ring-css').hide();
+                      })
+                    }
+                  });
+                  document.getElementById('buy-btn').addEventListener('click', function(e) {
+                    handler.open();
+                    e.stopPropagation();
+                    e.preventDefault();
+                  });
+                  // Close Checkout on page navigation:
+                  window.addEventListener('popstate', function() {
+                    handler.close();
+                  });
+                </script>
+              </div>
+            </form>
+            <div class="success-message-top w-form-done">
+              <div>Thanks for your order! Look for a button in your mailbox soon!</div>
+            </div>
+            <div class="success-message-top w-form-fail">
+              <div>We're sorry, but we were unable to complete your order. Please email hello@buttonjoy.com and we'll attempt to help you in person.</div>
+            </div>
+          </div>
+          <div class="w-form">
+            <form action="https://api.cloudstitch.com/buttonjoy/buttonjoy-interest" class="middle-form" data-name="Email Form" id="wf-form-Email-Form" method="post" name="wf-form-Email-Form">
+              <div class="w-embed">
+                <input type="hidden" name="_redirect" value="http://buttonjoy.com/thanks.html">
+                <input type="hidden" name="WhichForm" value="Header1">
+              </div>
+            </form>
+            <div class="success-message-top w-form-done">
+              <div>Thank you! We'll be in touch soon!</div>
+            </div>
+            <div class="w-form-fail">
+              <div>Oops! Something went wrong while submitting the form</div>
+            </div>
+          </div>
+        </div>
+        <div class="w-col w-col-6"><img sizes="(max-width: 479px) 87vw, (max-width: 767px) 90vw, (max-width: 991px) 354px, 460px" src="images/button-phone-right.png" srcset="images/button-phone-right-p-500x511.png 500w, images/button-phone-right-p-800x818.png 800w, images/button-phone-right-p-1080x1104.png 1080w, images/button-phone-right.png 1292w" width="646">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="make-money">
+    <div class="w-container">
+      <div class="w-tabs" data-duration-in="300" data-duration-out="100">
+        <div class="tab-menu w-tab-menu">
+          <a class="use-tab w--current w-inline-block w-tab-link" data-w-tab="Tab 1">
+            <div>Resupply Companies</div>
+          </a>
+          <a class="use-tab w-inline-block w-tab-link" data-w-tab="Tab 2">
+            <div>AirBnB Hosts</div>
+          </a>
+          <a class="use-tab w-inline-block w-tab-link" data-w-tab="Tab 3">
+            <div>Party/Event Doorbell</div>
+          </a>
+          <a class="use-tab w-inline-block w-tab-link" data-w-tab="Tab 4">
+            <div>Building Maintenance</div>
+          </a>
+        </div>
+        <div class="tab-content w-tab-content">
+          <div class="w--tab-active w-tab-pane" data-w-tab="Tab 1">
+            <div class="delivery-block">
+              <h2 class="centered they-push-header">Don't wait for scheduled deliveries!</h2>
+              <p class="bigger deliger theypush-copy">Give your customers a button they can push to tell you when they need a refill.
+                <br>
+                <br>They get an easy way to reorder, and you start making more revenue.</p>
+            </div>
+          </div>
+          <div class="w-tab-pane" data-w-tab="Tab 2">
+            <div class="checkout-block">
+              <h2 class="centered they-push-header">Get notified when a checkout occurs</h2>
+              <p class="bigger deliger theypush-copy">Stick a button next to your door do guests can tell you when they've checked out.
+                <br>
+                <br>You get a text message so you know when the property is ready to come by for cleaning.</p>
+            </div>
+          </div>
+          <div class="w-tab-pane" data-w-tab="Tab 3">
+            <div class="doorbell-block">
+              <h2 class="centered doorbell-header they-push-header">Doorbells aren't always the best way to get in the door</h2>
+              <p class="bigger deliger theypush-copy">Holding a noisy party or need to run down to the lobby to let guests in the front door? Stick a button outside that will text you to you know you've arrived.</p>
+            </div>
+          </div>
+          <div class="w-tab-pane" data-w-tab="Tab 4">
+            <div class="maint-block">
+              <h2 class="centered lcean-h2 they-push-header">Let guests notify you when the bathroom needs cleaning</h2>
+              <p class="bigger deliger theypush-copy">Just stick a "Please Clean"&nbsp;button to the wall of that bathroom on Basement 3 and the trash can will never overflow again.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="consierge">
+    <h1 class="concierge-h1">Concierge Setup</h1>
+    <p class="bigger deliger">Contact us for buttons pre-configured to do anything you need</p>
+    <div class="w-row">
+      <div class="w-col w-col-6">
+        <ul class="no-button-list">
+          <li>📨 Send emails</li>
+          <li>📱 Send text messages</li>
+          <li>☎️ Initiate phone calls</li>
+          <li>👥 Update Salesforce</li>
+        </ul>
+      </div>
+      <div class="w-col w-col-6">
+        <ul class="no-button-list">
+          <li>📝 Update spreadsheets</li>
+          <li>💳 Authorize payments</li>
+          <li>🤖 Run code</li>
+          <li>📈 Refresh Dashboards</li>
+        </ul>
+      </div>
+    </div>
+    <div>* Fancy white gloves worn when configuring orders over 1,000 buttons</div>
+  </div>
+  <div class="bg-orange centered pad-top">
+    <div class="w-container">
+      <h1 class="original">Brought to you by the creator of the <a href="https://medium.com/@edwardbenson/how-i-hacked-amazon-s-5-wifi-button-to-track-baby-data-794214b0bdd8#.v3mdk2qlp" class="orig-dash">original Dash Hack</a></h1>
+      <div class="logo-row">
+        <div class="w-row">
+          <div class="w-col w-col-4">
+            <a class="w-inline-block" href="http://gizmodo.com/hack-amazons-dash-buttons-to-do-more-than-order-stuff-1724725280"><img class="logo-img" sizes="(max-width: 479px) 59vw, 150px" src="images/gizmodo.png" srcset="images/gizmodo-p-500x192.png 500w, images/gizmodo.png 724w">
             </a>
           </div>
-          <div style="margin-top: 6px">
-            <a href="https://cloudstitch.com">
-              Powered by Cloudstitch
+          <div class="w-col w-col-4">
+            <a class="w-inline-block" href="http://www.popularmechanics.com/technology/gadgets/a16944/hack-amazon-dash-buttons-to-do-anything/"><img class="logo-img" sizes="(max-width: 479px) 60vw, 150px" src="images/logo_popular_mechanics.png" srcset="images/logo_popular_mechanics-p-500x149.png 500w, images/logo_popular_mechanics.png 593w">
+            </a>
+          </div>
+          <div class="w-col w-col-4">
+            <a class="w-inline-block" href="https://www.engadget.com/2015/08/17/hack-amazon-dash-buttons/"><img class="logo-img" sizes="(max-width: 479px) 59vw, 150px" src="images/engadget-logo-white.png" srcset="images/engadget-logo-white-p-500x167.png 500w, images/engadget-logo-white-p-800x268.png 800w, images/engadget-logo-white-p-1080x361.png 1080w, images/engadget-logo-white.png 1456w">
+            </a>
+          </div>
+        </div>
+        <div class="w-row">
+          <div class="w-col w-col-4">
+            <a class="w-inline-block" href="https://techcrunch.com/2015/08/17/amazons-5-dash-button-already-hacked-to-do-other-stuff-beyond-giving-amazon-money/"><img class="logo-img" sizes="(max-width: 479px) 59vw, 150px" src="images/techcrunch.png" srcset="images/techcrunch-p-500x224.png 500w, images/techcrunch-p-800x359.png 800w, images/techcrunch.png 1000w">
+            </a>
+          </div>
+          <div class="w-col w-col-4">
+            <a class="w-inline-block" href="http://lifehacker.com/you-can-hack-the-amazon-dash-buttons-to-track-any-kind-1724636764"><img class="logo-img" src="images/lifehacker.png">
+            </a>
+          </div>
+          <div class="w-col w-col-4">
+            <a class="w-inline-block" href="http://www.theverge.com/2015/9/28/9407669/amazon-dash-button-hack-pizza"><img class="logo-img verge-img" sizes="(max-width: 479px) 69vw, 150px" src="images/verge.png" srcset="images/verge-p-500x96.png 500w, images/verge-p-800x153.png 800w, images/verge-p-1080x207.png 1080w, images/verge-p-1600x306.png 1600w, images/verge-p-2000x383.png 2000w, images/verge.png 2004w">
             </a>
           </div>
         </div>
       </div>
-      <div class="container-lrg flex">
-        <div class="col-6 centervertical">
-          <h1 class="heading">
-            Make reordering your product as easy as pushing a button.
-          </h1>
-          <h2 class="paragraph" style="font-size: 1.4em">
-            <div>Crazy simple setup. Just $2 / month per button</div>
-          </h2>
-          <form class="ctas" method="POST" action="//api.cloudstitch.com/buttonjoy/buttonjoy-interest/datasources/sheet">
-            <input type="hidden" name="_redirect" value="http://buttonjoy.com/thanks.html" />      
-            <input type="hidden" name="WhichForm" value="Header1" />      
-            <input name="Email" class="ctas-input" type="text" placeholder="Email Address"><br/>
-            <input name="Phone" class="ctas-input" type="text" placeholder="Phone Number"><br/>
-            <input name="ButtonCount" class="ctas-input" type="text" placeholder="Expected # Buttons"><br/>
-            <input name="Industry" class="ctas-input" type="text" placeholder="Industry"><br/>
-            <button class="ctas-button">
-              Sign Up for Beta
-            </button>
-          </form>
-        </div>
-        <div class="col-6 sidedevices">
-          <div class="iphones">
-            <div class="iot-button">
-              <img class="mask-img" src="img/button.png" style="max-width: 220px">
+      <div class="w-row">
+        <div class="w-col w-col-4">
+          <div class="tweet">
+            <div class="tweet-name">Bill Briggs</div>
+            <div class="tweet-handle"><a href="http://www.twitter.com/wdbthree" class="tweet-link">@wdbthree</a>
             </div>
-            <div class="iphone">
-              <div class="mask">
-                <img class="mask-img" src="img/iphonescreen.png">
-              </div>
-            </div>
+            <p class="tweet-content">Absolutely love this; hack to use $5 Amazon Dash Button to track baby data (or: anything else you can imagine)</p>
           </div>
         </div>
-      </div>
-    </header>
-
-    We make you more money.
-
-    Do your customers wait for scheduled visits?
-    Does reordering require a phone call?
-
-    Don
-
-    When your customers wait for a scheduled visit, you lose money.
-    When your customers wait until a convienent time to call, you lose money.
-
-
-
-
-    <div class="feature1">
-      <div class="container-sml">
-        <div class="col-12 text-center">
-          <h3 class="heading">
-            Consierge setup.
-          </h3>
-        </div>
-      </div>
-      <div class="container-sml">
-        <div class="col-4 text-center">
-          <img src="img/consierge.png" style="max-height: 300px; align:left"/>
-        </div>
-        <div class="col-8 text-center">
-          <h3 class="heading">
-            Consierge setup.
-          </h3>
-        </div>
-      </div>
-
-    </div>
-
-    <div class="feature1">
-      <div class="container-sml">
-        <div class="col-12 text-center">
-          <h3 class="heading">
-            Consierge setup.
-
-            We provide the buttons with whatever you need.
-
-            Send emails
-            Update spreadsheets
-            Text your cell phone
-            Authorize payments
-            Run code
-
-          </h3>
-        </div>
-      </div>
-
-    </div>
-
-    <div class="feature2">
-      <div class="container-lrg flex">
-        <div class="col-4">
-          <b class="emoji">
-            📨
-          </b>
-          <h3 class="subheading">
-            Send you an email
-          </h3>
-          <p class="paragraph">
-            Create email templates that get sent to your team with customer information!
-          </p>
-        </div>
-        <div class="col-4">
-          <b class="emoji">
-            📝
-          </b>
-          <h3 class="subheading">
-            Updates a spreadsheet
-          </h3>
-          <p class="paragraph">
-            We give you a spreadsheet that stays in sync with all button clicks. 
-          </p>
-        </div>
-        <div class="col-4">
-          <b class="emoji">
-            🤖
-          </b>
-          <h3 class="subheading">
-            Runs code
-          </h3>
-          <p class="paragraph">
-            If you have custom code you need to execute, we can help you wire it up.
-
-          </p>
-        </div>
-
-      </div>
-    </div>
-
-
-    <div class="socialproof">
-      <div class="container-sml">
-        <div class="text-center">
-          <div class="col-12">
-            <h4 class="heading">
-              By the creator of the <br><a href="https://medium.com/@edwardbenson/how-i-hacked-amazon-s-5-wifi-button-to-track-baby-data-794214b0bdd8#.1n2lnrthl">original Dash Hack</a>
-            </h4>
-            We've been building smart buttons since the day they were born.
-          </div>
-        </div>
-      </div>
-      <div class="container-lrg">
-        <div class="tweets flex">
-          <div class="col-4">
-            <div class="testimonial">
-              <div class="flex flexvert">
-                <div>
-                  <b>
-                    Bill Briggs
-                  </b>
-                  <br>
-                  <span class=>
-                    @wdbthree
-                  </span>
-                </div>
-              </div>
-              <div class="testimonial-content">
-                <p class="paragraph">
-                  Absolutely love this; hack to use $5 Amazon Dash Button to track baby data (or: anything else you can imagine)
-                </p>
-              </div>
+        <div class="w-col w-col-4">
+          <div class="tweet">
+            <div class="tweet-name">Unha Engels</div>
+            <div class="tweet-handle"><a href="http://www.twitter.com/unha_engels" class="tweet-link">@unha_engels</a>
             </div>
+            <p class="tweet-content">Amazeballs. Guess what I'm doing this weekend? <a href="http://www.twitter.com/edwardbenson" class="tweet-link">@edwardbenson</a>, it's genius. I wonder how many people just bought DASH</p>
           </div>
-          <div class="col-4">
-            <div class="testimonial">
-              <div class="flex flexvert">
-                <div>
-                  <b>
-                    Unha Engels
-                  </b>
-                  <br>
-                  <span class=>
-                    @unha_engels
-                  </span>
-                </div>
-              </div>
-              <div class="testimonial-content">
-                <p class="paragraph">
-                    Amazeballs. Guess what i'm doing this weekend? <a href="http://www.twitter.com/edwardbenson">@edwardbenson</a>, it's genius. I wonder how many people just bought DASH
-                </p>
-              </div>
+        </div>
+        <div class="w-col w-col-4">
+          <div class="tweet">
+            <div class="tweet-name">Trevor Young</div>
+            <div class="tweet-handle">@<a href="http://www.twitter.com/_tyoung" class="tweet-link">_tyoung</a>
             </div>
-          </div>
-          <div class="col-4">
-            <div class="testimonial">
-              <div class="flex flexvert">
-                <div>
-                  <b>
-                    Trevor Young
-                  </b>
-                  <br>
-                  <span class=>
-                    @_tyoung
-                  </span>
-                </div>
-              </div>
-              <div class="testimonial-content">
-                <p class="paragraph">
-                  <a href="http://www.twitter.com/edwardbenson">@edwardbenson</a> Hey Ted! We used your amazon dash hack for a cool office productivity booster. Thanks!
-                </p>
-              </div>
-            </div>
+            <p class="tweet-content"><a href="http://www.edwardbenson.com" class="tweet-link">@edwardbenson</a> Hey Ted! We used your amazon dash hack for a cool office productivity booster. Thanks!</p>
           </div>
         </div>
-      </div>
+      </div><a class="buy-now-link w-button" href="#Order-form">Order a button now!</a>
     </div>
-    <div class="footer">
-      <div class="container-sml flex text-center">
-        <div class="col-12">
-          <h3 class="heading">
-            Crazy simple setup. <br />Just $2 / month per button.<br>
-          </h3>
-          <form class="ctas" method="POST" action="//api.cloudstitch.com/buttonjoy/buttonjoy-interest/datasources/sheet">
-            <input type="hidden" name="_redirect" value="http://buttonjoy.com/thanks.html" />      
-            <input type="hidden" name="WhichForm" value="Footer1" />      
-            <input name="Email" class="ctas-input" type="text" placeholder="Email Address"><br/>
-            <input name="Phone" class="ctas-input" type="text" placeholder="Phone Number"><br/>
-            <input name="ButtonCount" class="ctas-input" type="text" placeholder="Expected # Buttons"><br/>
-            <input name="Industry" class="ctas-input" type="text" placeholder="Industry"><br/>
-            <button class="ctas-button">
-              Sign Up for Beta
-            </button>
-          </form>
-        </div>
-      </div>
-      <div class="container-lrg footer-nav flex">
-        <div class="col-4 vertical">
-          <a class="logo" href="http://www.buttonjoy.com">
-            Buttonjoy
-          </a>
-          <a class="nav-link2">
-            ©2016 Cloudstitch Inc.
-          </a>
-        </div>
-        <div class="col-4 vertical">
-          <a class="nav-link2" href="https://www.cloudstitch.com">
-              Powered by Cloudstitch
-          </a>
-          We building a better web stack that powers web sites using ordinary spreadsheets and word docs.  
-        </div>
-        <div class="col-4 vertical">
-          <a class="nav-link2" href="https://www.cloudstitch.com/hiring">
-            <b>We're hiring!</b><br />
-            cloudstitch.com/hiring
-          </a>
-        </div>
-      </div>
-    </div>
-    <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-    var xhr = new XMLHttpRequest();
-    ga('create', 'UA-51170573-2', 'auto');
-    ga('send', 'pageview');
-    xhr.open('GET', 'https://api.cloudstitch.com/buttonjoy/buttonjoy-interest');
-    xhr.send(null);
-    </script>
-
-
-  </body>
+  </div>
+  <div class="bg-orange footer">
+    <h3>Buttonjoy</h3>
+    <h5>©2016 Cloudstitch</h5>
+    <p>cloudstitch.com/hiring</p>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js" type="text/javascript"></script>
+  <script src="js/webflow.js" type="text/javascript"></script>
+  <!-- [if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif] -->
+</body>
 </html>

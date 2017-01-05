@@ -1,0 +1,13 @@
+if(window._backend_) {
+  angular.module("backend")
+    .factory("global", ["context", function(context) {
+      copy = {};
+      return copy;
+    }]);
+} else {
+  angular.module("backend", [])
+    .factory("global", [function() {
+      return {};
+    }]);
+}
+window._dev_ = {};
