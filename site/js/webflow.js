@@ -767,6 +767,7 @@
     var namespace = '.w-webflow-badge';
     var location = window.location;
     var isPhantom = /PhantomJS/i.test(navigator.userAgent);
+    var brandElement;
 
     // -----------------------------------
     // Module methods
@@ -778,12 +779,13 @@
         shouldBrand = true;
       }
       if (shouldBrand && !isPhantom) {
+        brandElement = brandElement || createBadge();
         ensureBrand();
         setTimeout(ensureBrand, 500);
       }
     };
 
-    var brandElement = (function() {
+    function createBadge() {
       var $brand = $('<a class="w-webflow-badge"></a>')
       .attr('href', 'https://webflow.com?utm_campaign=brandjs');
 
@@ -799,7 +801,7 @@
 
       $brand.append($logoArt, $logoText);
       return $brand[0];
-    }());
+    }
 
     function ensureBrand() {
       var found = $body.children(namespace);
@@ -1221,9 +1223,10 @@
     var retro = window.XDomainRequest && !window.atob;
     var namespace = '.w-form';
     var siteId;
-    var emailField = /e(\-)?mail/i;
+    var emailField = /e(-)?mail/i;
     var emailValue = /^\S+@\S+$/;
     var alert = window.alert;
+    var inApp = Webflow.env();
     var listening;
 
     // MailChimp domains: list-manage.com + mirrors
@@ -1233,16 +1236,14 @@
       alert('Oops! This page has improperly configured forms. Please contact your website administrator to fix this issue.');
     }, 100);
 
-    api.ready = function() {
+    api.ready = api.design = api.preview = function() {
       // Init forms
       init();
 
-      // Wire document events once
-      if (!listening) addListeners();
-    };
-
-    api.preview = api.design = function() {
-      init();
+      // Wire document events on published site only once
+      if (!inApp && !listening) {
+        addListeners();
+      }
     };
 
     function init() {
@@ -1594,6 +1595,9 @@
     };
 
     api.ready = function() {
+      // Redirect IX init while in design/preview modes
+      if (inApp) return env('design') ? api.design() : api.preview();
+
       // Ready should only be used after destroy, as a way to re-init
       if (config && destroyed) {
         destroyed = false;
@@ -1917,6 +1921,9 @@
     // (In app) Set styles immediately and manage upstream transition
     function styleApp(el, data) {
       var _tram = tram(el);
+
+      // Exit early when data is empty to avoid clearing upstream
+      if ($.isEmptyObject(data)) return;
 
       // Get computed transition value
       el.css('transition', '');
@@ -3481,6 +3488,7 @@
     // Module methods
 
     api.ready = function() {
+      designer = Webflow.env('design');
       init();
     };
 
