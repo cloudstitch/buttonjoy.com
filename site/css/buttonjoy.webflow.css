@@ -410,6 +410,15 @@
   color: #e7eafd;
 }
 
+.centered-div {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.centered-div.centered {
+  text-align: center;
+}
+
 @media (max-width: 991px) {
   .bg-orange.footer {
     display: block;
@@ -586,3 +595,4 @@
     align-items: center;
   }
 }
+
