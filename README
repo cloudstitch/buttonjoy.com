@@ -1,0 +1,15 @@
+To Deploy
+=========
+
+1. Clear the `site` and `staging` folders.
+2. Unzip the Webflow export into both
+3. Replace the stripe key with the development one in staging
+4. Test staging served from localhost
+5. gulp deploy
+
+
+Keys
+====
+
+Test: pk_test_zhxDwsDEiSVX0wOl8OIkkCMu
+Prod: pk_live_BS74F3hkBGXozwX0thtk9MX6

@@ -207,4 +207,9 @@ document.getElementById('buy-btn').addEventListener('click', function(e) {
 window.addEventListener('popstate', function() {
   handler.close();
 });
+
+}
+
+
+
 </script>
