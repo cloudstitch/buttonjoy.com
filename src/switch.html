@@ -1,0 +1,32 @@
+<html>
+  <body>
+
+<div class="navbar">
+    <a href="https://www.buttonjoy.com">
+        <img src="/art/exported/buttonjoy-logo-grey.png" width="232" height="56" />
+    </a>
+    <a class="onoffswitch" id="switchButton" href="/charity">
+        <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
+        <label class="onoffswitch-label" for="myonoffswitch">
+        <span class="switchlabel label-before">Magic Button</span>		
+        <span class="onoffswitch-slug">	
+            <span class="onoffswitch-inner"></span>
+            <span class="onoffswitch-switch"></span>
+        </span>
+        <span class="switchlabel label-after">Charity Button</span>
+        </label>    
+    </a>
+</div>
+
+<script>
+  document.getElementById('myonoffswitch').addEventListener('change', function() {
+      document.location = document.getElementById('switchButton').getAttribute('href');
+  })
+  setTimeout(function() {
+    var theSwitch = document.getElementById('myonoffswitch');
+    theSwitch.checked = !theSwitch.checked;
+  }, 500);
+</script>
+
+  </body>
+</html>
