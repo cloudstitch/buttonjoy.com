@@ -13,3 +13,23 @@ Keys
 
 Test: pk_test_zhxDwsDEiSVX0wOl8OIkkCMu
 Prod: pk_live_BS74F3hkBGXozwX0thtk9MX6
+
+
+trigger events
+Activate Buttonjoy buttons with your voice to send emails, log data, even donate to charity.
+
+Buttonjoy sells WiFi buttons that send emails, log data, even donate to charity. This Google Action lets you trigger your Buttonjoy buttons using your voice.
+
+Ok Google, tell Buttonjoy to tell my wife I'm coming home.
+Ok Google, tell Buttonjoy to record that I smoked a cigarette.
+Ok Google, tell Buttonjoy to tell the team on Slack that I'll be late.
+Ok Google, tell Buttonjoy to push the email Teri button.
+
+
+
+User: buttonjoy.test@gmail.com / Password: test.buttonjoy.
+
+Then try saying "Ok Google, tell Buttonjoy to push the email me button."
+
+You can see the "Buttons" registered by logging into cloudstitch.com with the user/pass above.
+

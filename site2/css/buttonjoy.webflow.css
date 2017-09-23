@@ -525,7 +525,7 @@
 }
 
 .page-h1 {
-  margin-bottom: 2px;
+  margin-bottom: 20px;
   color: #555;
   text-align: center;
 }
@@ -631,31 +631,6 @@
 
 .thanks-text {
   color: #000;
-}
-
-.setup-h2 {
-  margin-left: 40px;
-  font-size: 25px;
-}
-
-.step-list {
-  margin-bottom: 10px;
-}
-
-.center-img {
-  display: block;
-  margin-right: auto;
-  margin-bottom: 42px;
-  margin-left: auto;
-}
-
-.setup-subtitle {
-  margin-right: 20px;
-  margin-bottom: 29px;
-  margin-left: 20px;
-  font-size: 17px;
-  font-weight: 400;
-  text-align: center;
 }
 
 @media (max-width: 991px) {

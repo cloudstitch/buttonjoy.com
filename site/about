@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<!--  This site was created in Webflow. http://www.webflow.com -->
+<!--  Last Published: Thu Feb 16 2017 07:21:33 GMT+0000 (UTC)  -->
+<html data-wf-page="58a274c633473c5841a67c7c" data-wf-site="5858906d4007680b63d14966">
+<head>
+  <meta charset="utf-8">
+  <title>About</title>
+  <meta content="Buttonjoy makes buttons that do amazing things. Trigger text messages, send emails, log data to spreadsheets, and even donate to charity." name="description">
+  <meta content="About" property="og:title">
+  <meta content="Buttonjoy makes buttons that do amazing things. Trigger text messages, send emails, log data to spreadsheets, and even donate to charity." property="og:description">
+  <meta content="summary" name="twitter:card">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <meta content="Webflow" name="generator">
+  <link href="css/normalize.css" rel="stylesheet" type="text/css">
+  <link href="css/webflow.css" rel="stylesheet" type="text/css">
+  <link href="css/buttonjoy.webflow.css" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>
+  <script type="text/javascript">
+    WebFont.load({
+      google: {
+        families: ["Droid Sans:400,700"]
+      }
+    });
+  </script>
+  <script src="js/modernizr.js" type="text/javascript"></script>
+  <link href="images/b-ico.png" rel="shortcut icon" type="image/x-icon">
+  <link href="images/b-256.png" rel="apple-touch-icon">
+  <meta content="summary_large_image" property="twitter:card">
+  <meta content="@buttonjoy" property="twitter:site">
+  <meta content="@edwardbenson" property="twitter:creator">
+  <style>
+    .bg-orange .footer-block a {
+      color: white;
+    }
+    .grey .footer-block a {
+      color: #333;
+      border-color: #333;
+    }
+    .onoffswitch {
+        font-size: 1.3em;
+        position: relative; display: block; overflow: hidden;
+        -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+      display: inline-block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .onoffswitch-checkbox {
+        display: none;
+    }
+    .onoffswitch-label {
+      position: relative;
+      display: block; overflow: hidden; cursor: pointer;
+    }
+    .onoffswitch-slug {
+        float: left;
+        width: 90px;    
+        position: relative;
+        display: block; overflow: hidden; cursor: pointer;
+        border: 2px solid #FFFFFF;
+        border-radius: 20px;
+        background-color: rgba(229, 229, 231, 0.3);
+    }
+    .onoffswitch-inner {
+        display: block; width: 200%; margin-left: -100%;
+        transition: margin 0.6s ease-in 0s;
+    }
+    .onoffswitch-inner:before, .onoffswitch-inner:after {
+        display: block; float: left; width: 50%; height: 30px; padding: 0; line-height: 30px;
+        font-size: 14px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
+        box-sizing: border-box;
+    }
+    .onoffswitch-inner:before {
+        content: "";
+        padding-left: 10px;
+        background-color: rgba(255, 255, 255, 0.3); color: #474747;
+    }
+    .onoffswitch-inner:after {
+        content: "";
+        padding-right: 10px;
+        background-color: rgba(255, 255, 255, 0.3);; color: #FFFFFF;
+        text-align: right;
+    }
+    .onoffswitch-switch {
+        display: block; width: 21px; height: 21px; margin: 4.5px; margin-top: 2.5px;
+        background: #A1A1A1;
+        background-color: rgba(255, 255, 255, 1);   
+        position: absolute; top: 0; bottom: 0;
+        right: 56px;
+        border: 2px solid rgba(255, 255, 255, 1); 
+        border-radius: 20px;
+        transition: all 0.6s ease-in 0s; 
+    }
+    .switchlabel {
+      float: left;
+      line-height: 30px;
+      padding: 0px 8px 0px 8px;
+      color: white;
+    }
+    .onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+        margin-left: 0;
+    }
+    .onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+        right: 0px; 
+        border-color: rgba(0, 168, 230, 1);
+        background-color: rgba(0, 168, 230, 1);    
+    }
+    .onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-slug {
+        border: 2px solid rgba(90, 90, 90, 1);
+        background-color: rgba(0, 168, 230, 0.12);
+    }
+    .onoffswitch-checkbox:checked + .onoffswitch-label .switchlabel {
+        color: rgba(90, 90, 90, 1);
+    }
+    @-webkit-keyframes uil-ring-anim {
+      0% {
+        -ms-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+      }
+      100% {
+        -ms-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+      }
+    }
+    @-webkit-keyframes uil-ring-anim {
+      0% {
+        -ms-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+      }
+      100% {
+        -ms-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+      }
+    }
+    @-moz-keyframes uil-ring-anim {
+      0% {
+        -ms-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+      }
+      100% {
+        -ms-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+      }
+    }
+    @-ms-keyframes uil-ring-anim {
+      0% {
+        -ms-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+      }
+      100% {
+        -ms-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+      }
+    }
+    @-moz-keyframes uil-ring-anim {
+      0% {
+        -ms-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+      }
+      100% {
+        -ms-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+      }
+    }
+    @-webkit-keyframes uil-ring-anim {
+      0% {
+        -ms-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+      }
+      100% {
+        -ms-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+      }
+    }
+    @-o-keyframes uil-ring-anim {
+      0% {
+        -ms-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+      }
+      100% {
+        -ms-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+      }
+    }
+    @keyframes uil-ring-anim {
+      0% {
+        -ms-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+      }
+      100% {
+        -ms-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+      }
+    }
+    .uil-ring-css {
+      background: none;
+      position: relative;
+      width: 200px;
+      height: 200px;
+    }
+    .uil-ring-css > div {
+      position: absolute;
+      display: block;
+      width: 160px;
+      height: 160px;
+      top: 20px;
+      left: 20px;
+      border-radius: 80px;
+      box-shadow: 0 6px 0 0 #cbe9ed;
+      -ms-animation: uil-ring-anim 1s linear infinite;
+      -moz-animation: uil-ring-anim 1s linear infinite;
+      -webkit-animation: uil-ring-anim 1s linear infinite;
+      -o-animation: uil-ring-anim 1s linear infinite;
+      animation: uil-ring-anim 1s linear infinite;
+    }
+    .uil-ring-blue > div {
+      box-shadow: 0 6px 0 0 rgb(50, 79, 165) !important;  
+    }
+  </style>
+  <script>
+    function getQueryVariable(variable)
+    {
+           var query = window.location.search.substring(1);
+           var vars = query.split("&");
+           for (var i=0;i<vars.length;i++) {
+                   var pair = vars[i].split("=");
+                   if(pair[0] == variable){return pair[1];}
+           }
+           return(false);
+    }
+    function getStripeAccount() { 
+      var metas = document.getElementsByTagName('meta'); 
+        for (var i=0; i<metas.length; i++) { 
+          if (metas[i].getAttribute("property") == "stripe-account") { 
+            return metas[i].getAttribute("content"); 
+          } 
+        }
+      return "";
+    } 
+    function isCharity() {
+      return (getStripeAccount() === 'charity')
+    }
+    function isDev() {
+      return (getQueryVariable('env') == 'dev'); 
+    }
+    function getStripeKey() {
+      var charity = isCharity();
+      if (isDev()) {
+        if (charity === true) {
+          return 'pk_test_fhPlgS4SFjB55okmry3I2BbL';
+        } else {
+          return 'pk_test_cXEq1MuWI2U1lInrKtnnDh5Z';
+        }
+      } else {
+        if (charity === true) {
+          return 'pk_live_8BNzU9S6kT3Rrl13TBaXzBYN';
+        } else {
+          return 'pk_live_go1dwkN7bQJrkWNOuoWCSAjS';
+        }    
+      }
+    }
+  </script>
+</head>
+<body class="grey grey-background">
+  <div class="grey w-nav" data-animation="default" data-collapse="medium" data-duration="400">
+    <div class="w-container">
+      <a class="logo-wrapper w-nav-brand" href="https://www.buttonjoy.com"><img class="logo-img" sizes="(max-width: 479px) 77vw, 232.5px" src="images/buttonjoy-logo-grey.png" srcset="images/buttonjoy-logo-grey-p-500x121.png 500w, images/buttonjoy-logo-grey.png 665w" width="232.5">
+      </a>
+      <div class="navbar-right"><a href="index.html" class="nav-link">Magic Button</a> &nbsp;&nbsp;&nbsp;&nbsp;<a href="charity.html" class="nav-link">Charity Button</a>
+      </div>
+    </div>
+  </div>
+  <div class="grey">
+    <div class="w-container">
+      <div class="page-block">
+        <h1 class="page-h1">About Buttonjoy</h1>
+        <p class="page-p page-pl"><a href="https://www.buttonjoy.com">Buttonjoy</a> sells programmable Wi-Fi buttons you can stick on your fridge and push to trigger text messages, send emails, record data -- even donate to charity.</p>
+        <p class="page-p page-pl"><a href="https://www.cloudstitch.com">Cloudstitch</a>, a YCombinator-backed web platform startup, built the product after seeing&nbsp;a <a href="https://techcrunch.com/2017/02/08/this-amazon-dash-button-donates-5-to-the-aclu-whenever-trump-tries-your-patience/">DIY hack</a> for ACLU donation buttons&nbsp;on TechCrunch. We thought a donation button was an amazing idea, and we realized the Cloudstitch platform was perfect to power it.</p>
+        <p class="page-p page-pl">Now when you find yourself at home wishing you could make the world a better place, you can channel that sentiment into real action. Just push a button and automatically donate a small amount to the charity of your choice.</p>
+        <p class="page-p page-pl">Buttonjoy comes in two flavors:</p>
+        <ul class="pad-list">
+          <li><a href="charity.html">The Charity Button</a> donates money to a designated charity when pushed. We'll be adding Facebook and Twitter integration as well, so you can let others know you've donated.</li>
+          <li><a href="index.html">The Magic Button</a> is for DIY use. It can be configured to trigger SMS messages, send emails, make robo-phone calls, and log data to spreadsheets.</li>
+        </ul>
+        <p class="page-p page-pl">Cloudstitch is no stranger to hacking Amazon’s buttons. Our founder was the creator of&nbsp;the <a href="https://medium.com/@edwardbenson/how-i-hacked-amazon-s-5-wifi-button-to-track-baby-data-794214b0bdd8">original baby-tracker hack</a>&nbsp;when Amazon first released its Dash Buttons. But hacking Amazon’s buttons product has come along way since then, and now the internet of things is opening up new ways to interact with technology.</p>
+        <p class="page-p page-pl">Our goal is to enable creativity and productivity without any technical barriers to entry. That’s what Cloudstitch does for web development, and that’s what Buttonjoy is aims to do for the Internet of Things.</p>
+        <p class="page-p page-pl">Please reach out with comments, press inquiries, and partnership questions to <a href="mailto:hello@buttonjoy.com">hello@buttonjoy.com</a>.</p>
+      </div>
+    </div>
+  </div>
+  <div class="grey">
+    <div class="footer-block">
+      <h3 class="bottom-h3">Buttonjoy is part of the <a href="https://www.cloudstitch.com" class="white-link" id="white-link">Cloudstitch</a> family.</h3>
+      <p>Cloudstitch is a platform for building web sites with everyday tools: spreadsheets, word docs, IoT devices, and more.</p>
+      <h5>©2016 Cloudstitch | <a class="white-link" href="mailto:hello@cloudstitch.com?subject=Buttonjoy Inquiry">hello@cloudstitch.com</a></h5>
+    </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js" type="text/javascript"></script>
+  <script src="js/webflow.js" type="text/javascript"></script>
+  <!-- [if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif] -->
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-51170573-2', 'auto');
+    ga('send', 'pageview');
+  </script>
+  <!--  Facebook Pixel Code  -->
+  <script>
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+    n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+    document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '156331461539073', {
+    em: 'insert_email_variable,'
+    });
+    fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=156331461539073&ev=PageView&noscript=1">
+  </noscript>
+  <!--  DO NOT MODIFY  -->
+  <!--  End Facebook Pixel Code  -->
+  <!--  Go to www.addthis.com/dashboard to customize your tools  -->
+  <script type="text/javascript" src="https://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-589b5dd7e81066cf"></script>
+  <script>
+    var theSwitch = document.getElementById('myonoffswitch');
+    if (theSwitch) {
+      // Switch pages.
+      theSwitch.addEventListener('change', function() {
+        document.location = document.getElementById('switchButton').getAttribute('href');
+      });
+      setTimeout(function() {
+        theSwitch.checked = isCharity();
+      }, 500);
+    }
+  </script>
+</body>
+</html>

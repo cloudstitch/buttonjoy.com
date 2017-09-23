@@ -3,6 +3,7 @@
 var gulp = require('gulp');
 var AWS = require('aws-sdk');
 var awspublish = require("gulp-awspublish");
+var awspublishRouter = require("gulp-awspublish-router");
 
 gulp.task('deploy', function(cb) {
   var publisher = awspublish.create({
@@ -17,16 +18,22 @@ gulp.task('deploy', function(cb) {
   };
 
   return gulp.src('site/**/**')
-    // gzip, Set Content-Encoding headers and add .gz extension
-    // .pipe(awspublish.gzip({ ext: '.gz' }))
-
-    // publisher will add Content-Length, Content-Type and headers specified above
-    // If not specified it will set x-amz-acl to public-read by default
-    .pipe(publisher.publish(headers))
-
-    // create a cache file to speed up consecutive uploads
-    .pipe(publisher.cache())
-
-    // print upload updates to console
+    .pipe(awspublishRouter({
+      cache: {
+          // cache for 5 minutes by default 
+          cacheTime: 300
+      },
+      routes: {
+        "^about$": { headers: { "Content-Type": "text/html" } },
+        "^index$": { headers: { "Content-Type": "text/html" } },
+        "^charity$": { headers: { "Content-Type": "text/html" } },
+        "^faq$": { headers: { "Content-Type": "text/html" } },
+        "^partnerships$": { headers: { "Content-Type": "text/html" } },
+        "^setup$": { headers: { "Content-Type": "text/html" } },
+        "^.+$": "$&"
+      }
+    }))
+    .pipe(publisher.publish())
+    .pipe(publisher.sync())
     .pipe(awspublish.reporter());
 });

@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <!--  This site was created in Webflow. http://www.webflow.com -->
 <!--  Last Published: Thu Feb 23 2017 00:42:34 GMT+0000 (UTC)  -->
-<html data-wf-page="5858906d4007680b63d14967" data-wf-site="5858906d4007680b63d14966">
+<html data-wf-page="58a10b08f703a9087cc35f31" data-wf-site="5858906d4007680b63d14966">
 <head>
   <meta charset="utf-8">
-  <title>Button Joy</title>
-  <meta content="Wifi buttons that send emails, trigger text messages, update spreadsheets, and more. Perfect for distribution services, data tracking, and notifications." name="description">
-  <meta content="Button Joy" property="og:title">
-  <meta content="Wifi buttons that send emails, trigger text messages, update spreadsheets, and more. Perfect for distribution services, data tracking, and notifications." property="og:description">
-  <meta content="https://s3-us-west-2.amazonaws.com/buttonjoy.com/images/buttonjoy-opengraph.png" property="og:image">
+  <title>Buttonjoy for Charity</title>
+  <meta content="Wifi buttons that donate to charity every time you push them. Don&#39;t shout the TV --  make a difference." name="description">
+  <meta content="Buttonjoy for Charity" property="og:title">
+  <meta content="Wifi buttons that donate to charity every time you push them. Don&#39;t shout the TV --  make a difference." property="og:description">
+  <meta content="https://s3-us-west-2.amazonaws.com/buttonjoy.com/images/buttonjoy-charity-opengraph.png" property="og:image">
   <meta content="summary" name="twitter:card">
   <meta content="width=device-width, initial-scale=1" name="viewport">
   <meta content="Webflow" name="generator">
@@ -308,15 +308,16 @@
       }
     }
   </script>
+  <meta property="stripe-account" content="charity">
 </head>
 <body class="buttonjoy-font">
-  <div class="orange w-nav" data-animation="default" data-collapse="medium" data-duration="400">
+  <div class="grey w-nav" data-animation="default" data-collapse="medium" data-duration="400">
     <div class="w-container">
-      <a class="logo-wrapper w-nav-brand" href="https://www.buttonjoy.com"><img class="logo-img" src="images/buttonjoy-logo-white.png" width="232.5">
+      <a class="logo-wrapper w-nav-brand" href="https://www.buttonjoy.com"><img class="logo-img" sizes="(max-width: 479px) 77vw, 232.5px" src="images/buttonjoy-logo-grey.png" srcset="images/buttonjoy-logo-grey-p-500x121.png 500w, images/buttonjoy-logo-grey.png 665w" width="232.5">
       </a>
       <div class="navbar-right w-embed">
-        <a class="onoffswitch" id="switchButton" href="charity.html">
-          <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked="">
+        <a class="onoffswitch" id="switchButton" href="index.html">
+          <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch">
           <label class="onoffswitch-label" for="myonoffswitch">
             <span class="switchlabel label-before">Magic Button</span>
             <span class="onoffswitch-slug">	
@@ -329,59 +330,61 @@
       </div>
     </div>
   </div>
-  <div class="bg-orange">
+  <div class="grey grey-hand">
     <div class="w-container">
       <div class="w-row">
         <div class="lrpad w-col w-col-6" id="Order-form">
-          <h1 class="h1-send-me" id="send-me-title">Send me a button that..</h1>
+          <h1 class="grey-h1" id="send-me-title">A button that donates to charity with every click.</h1>
           <div class="w-form" id="buy-form">
-            <form class="charity-form w-clearfix" data-name="Email Form" id="email-form" name="email-form">
-              <div class="radio radio-buy w-clearfix w-radio">
-                <input class="radio w-radio-input" data-name="Transport" id="Phone" name="Transport" type="radio" value="Phone">
-                <label class="radio w-form-label" for="Phone">Calls</label>
+            <form class="charity-form" data-name="Email Form" id="email-form" name="email-form">
+              <h4 class="grey-h4">Select your Charity</h4>
+              <select class="grey-dropdown w-select" data-name="Charity" id="Charity" name="Charity" required="required">
+                <option value="ACLU">ACLU</option>
+                <option value="American Refugee Committee">American Refugee Committee</option>
+                <option value="DonorsChoose.org">DonorsChoose.org</option>
+                <option value="GAP">Government Accountability Project</option>
+                <option value="NAACP">NAACP</option>
+                <option value="Planned Parenthood">Planned Parenthood</option>
+                <option value="ProPublica">ProPublica</option>
+                <option value="Scholarship America">Scholarship America</option>
+                <option value="Trevor Project">The Trevor Project</option>
+              </select>
+              <h4 class="grey-h4">Select your Amount</h4>
+              <select class="grey-dropdown w-select" data-name="Amount" id="Amount" name="Amount" required="required">
+                <option value="5">$5</option>
+                <option value="10">$10</option>
+                <option value="15">$15</option>
+                <option value="25">$25</option>
+                <option value="50">$50</option>
+                <option value="100">$100</option>
+                <option value="250">$250</option>
+              </select>
+              <div class="w-checkbox">
+                <input class="w-checkbox-input" data-name="Sharing" id="Sharing" name="Sharing" type="checkbox">
+                <label class="w-form-label" for="Sharing">Share my information with the charity</label>
               </div>
-              <div class="radio radio-buy w-clearfix w-radio">
-                <input class="radio w-radio-input" data-name="Transport" id="SMS" name="Transport" type="radio" value="SMS">
-                <label class="radio w-form-label" for="SMS">Texts</label>
-              </div>
-              <div class="radio radio-buy w-clearfix w-radio">
-                <input class="radio w-radio-input" data-name="Transport" id="Email" name="Transport" type="radio" value="Email">
-                <label class="radio w-form-label" for="Email">Emails</label>
-              </div>
-              <h4 class="grey-h4" id="this-number-h4">This Number</h4>
-              <input class="w-input" data-name="Target" id="Target" maxlength="256" name="Target" placeholder="(555) 555-1212" required="required" type="text">
-              <h4 class="grey-h4">With the Message</h4>
-              <textarea class="w-input" data-name="Message" id="Message" maxlength="5000" name="Message" placeholder="Allen Legal Associates has requested a water refill."></textarea>
-              <input class="grey-submit submit w-button" data-wait="Please wait..." id="buy-btn" type="submit" value="Buy ($35)">
+              <input class="grey-submit submit w-button" data-wait="Please wait..." id="buy-btn" type="submit" value="Buy ($25)"><a class="bulk bulk-grey" href="faq.html" target="_blank">Charity buttons are sold at cost -- see FAQ</a>
               <div class="w-embed">
                 <input type="hidden" id="emailInput" name="email">
                 <input type="hidden" id="stripeToken" name="stripeToken">
               </div>
             </form>
             <div class="w-form-done">
-              <div class="thanks-text">Thank you! Your order has been placed and you'll hear from us shortly!</div>
+              <div>Thank you! Your order has been placed and you'll hear from us shortly!</div>
             </div>
             <div class="w-form-fail">
-              <div class="thanks-text">Oops! Something went wrong while submitting the form.
-                <br>Please email <a href="mailto:hello@buttonjoy.com">hello@buttonjoy.com</a> for help.</div>
+              <div>Oops! Something went wrong while submitting the form.
+                <br>Please reach out to <a href="mailto:hello@buttonjoy.com?subject=Problem purchasing charity button">hello@buttonjoy.com</a>
+              </div>
             </div>
           </div>
           <div class="w-embed">
-            <div class="uil-ring-css" style="display:none; transform:scale(0.6);">
+            <div class="uil-ring-css uil-ring-blue" style="display:none; transform:scale(0.6);">
               <div></div>
             </div>
           </div>
         </div>
-        <div class="w-col w-col-6"><img src="images/water-refill-phont.png" width="646">
-        </div>
-      </div>
-    </div>
-    <div class="bg-orange">
-      <div class="centered centered-div">
-        <div class="centered-div w-embed">
-          <!--  Go to www.addthis.com/dashboard to customize your tools  -->
-          <div class="addthis_inline_share_toolbox"></div>
-        </div>
+        <div class="grey-hand w-col w-col-6"></div>
       </div>
     </div>
   </div>
@@ -397,57 +400,12 @@
       </div>
     </div>
   </div>
-  <div class="grey make-money">
+  <div>
     <div class="w-container">
-      <h2 class="dark-grey-text do-center">How will you use your button?</h2>
-      <div class="w-tabs" data-duration-in="300" data-duration-out="100">
-        <div class="tab-menu w-tab-menu">
-          <a class="use-tab w-inline-block w-tab-link" data-w-tab="Tab 1">
-            <div>B2B Suppliers</div>
-          </a>
-          <a class="use-tab w-inline-block w-tab-link" data-w-tab="Tab 2">
-            <div>AirBnB Hosts</div>
-          </a>
-          <a class="use-tab w-inline-block w-tab-link" data-w-tab="Tab 3">
-            <div>Event Organizers</div>
-          </a>
-          <a class="use-tab w--current w-inline-block w-tab-link" data-w-tab="Tab 4">
-            <div>Building Maintenance</div>
-          </a>
-        </div>
-        <div class="tab-content w-tab-content">
-          <div class="w-tab-pane" data-w-tab="Tab 1">
-            <div class="delivery-block">
-              <h2 class="centered they-push-header">Don't wait for scheduled deliveries!</h2>
-              <p class="bigger deliger theypush-copy">Give customers a button they can push when they need a refill.
-                <br>
-                <br>They get an easy way to reorder. You start making more revenue.</p>
-            </div>
-          </div>
-          <div class="w-tab-pane" data-w-tab="Tab 2">
-            <div class="checkout-block">
-              <h2 class="centered they-push-header">Get notified when a checkout occurs</h2>
-              <p class="bigger deliger theypush-copy">Stick a button by your door for guests to push when they check out.
-                <br>
-                <br>You get a text message so you know when the property is ready for cleaning.</p>
-            </div>
-          </div>
-          <div class="w-tab-pane" data-w-tab="Tab 3">
-            <div class="doorbell-block">
-              <h2 class="centered doorbell-header they-push-header">A doorbell for events in corporate spaces.</h2>
-              <p class="bigger deliger theypush-copy">Need to run down from the 7th floor to let guests into your MeetUp event?
-                <br>
-                <br>Stick a button outside so guests can text you when they've arrived.</p>
-            </div>
-          </div>
-          <div class="w--tab-active w-tab-pane" data-w-tab="Tab 4">
-            <div class="maint-block">
-              <h2 class="centered lcean-h2 they-push-header">Let guests notify you when the bathroom needs cleaning</h2>
-              <p class="bigger deliger theypush-copy">Just stick a "Please Clean"&nbsp;button to the wall of that bathroom on Basement Level 3.
-                <br>
-                <br>The trash can will never overflow again.</p>
-            </div>
-          </div>
+      <div class="centered centered-div">
+        <div class="centered-div w-embed">
+          <!--  Go to www.addthis.com/dashboard to customize your tools  -->
+          <div class="addthis_inline_share_toolbox"></div>
         </div>
       </div>
     </div>
@@ -474,29 +432,6 @@
         </div>
       </div>
     </div>
-  </div>
-  <div class="consierge">
-    <h1 class="concierge-h1">Concierge Setup</h1>
-    <p class="bigger deliger">Contact us for buttons pre-configured to do anything you need</p>
-    <div class="w-row">
-      <div class="w-col w-col-6">
-        <ul class="no-button-list">
-          <li>📨 Send emails</li>
-          <li>📱 Send text messages</li>
-          <li>☎️ Initiate phone calls</li>
-          <li>👥 Update Salesforce</li>
-        </ul>
-      </div>
-      <div class="w-col w-col-6">
-        <ul class="no-button-list">
-          <li>📝 Update spreadsheets</li>
-          <li>💳 Authorize payments</li>
-          <li>🤖 Run code</li>
-          <li>📈 Refresh Dashboards</li>
-        </ul>
-      </div>
-    </div>
-    <div>* Fancy white gloves worn when configuring orders over 1,000 buttons</div>
   </div>
   <div class="bg-orange centered pad-top">
     <div class="w-container">
@@ -559,7 +494,7 @@
       </div><a class="buy-now-link w-button" href="#Order-form">Order a button now!</a>
     </div>
   </div>
-  <div class="bg-orange">
+  <div class="bg-orange footer">
     <div class="footer-block">
       <h3 class="bottom-h3">Buttonjoy is part of the <a href="https://www.cloudstitch.com" class="white-link" id="white-link">Cloudstitch</a> family.</h3>
       <p>Cloudstitch is a platform for building web sites with everyday tools: spreadsheets, word docs, IoT devices, and more.</p>
@@ -682,7 +617,6 @@
       handler.close();
     });
   </script>
-
   <script>
     window.intercomSettings = {
       app_id: "m3x4jukd"
@@ -691,5 +625,6 @@
   <script>
     (function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',intercomSettings);}else{var d=document;var i=function(){i.c(arguments)};i.q=[];i.c=function(args){i.q.push(args)};w.Intercom=i;function l(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/m3x4jukd';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);}if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})()
     </script>
+
 </body>
 </html>
